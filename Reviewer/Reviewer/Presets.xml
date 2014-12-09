@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Presets>
+  <Preset vformat="AVC" vformatid="H264" height="576" width="720" vbitratemin="1000" vbitratemax="10000" vframerate="25" aformat="AAC" abitratemin="128" abitratemax="512" asamplerate="48000"></Preset>
+  <Preset vformat="DV" vformatid="DV" height="576" width="720" vbitratemin="1000" vbitratemax="10000" vframerate="25" aformat="AAC" abitratemin="128" abitratemax="512" asamplerate="48000"></Preset>
+  <Preset vformat="DV" vformatid="DV" height="576" width="720" vbitratemin="0" vbitratemax="10000" vframerate="25" aformat="PCM" abitratemin="0" abitratemax="3000" asamplerate="48000"></Preset>
+</Presets>

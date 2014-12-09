@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CC6BE434-0877-4F65-8A13-76532B314F8A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MControls</RootNamespace>
+    <AssemblyName>MControls</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MCollapsibleGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlsSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>ControlsSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddURL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddURL.Designer.cs">
+      <DependentUpon>FormAddURL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCameraControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCameraControl.Designer.cs">
+      <DependentUpon>FormCameraControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCG.designer.cs">
+      <DependentUpon>FormCG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCG_Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCG_Schedule.designer.cs">
+      <DependentUpon>FormCG_Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCG_XML.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCG_XML.designer.cs">
+      <DependentUpon>FormCG_XML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChromaKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChromaKey.Designer.cs">
+      <DependentUpon>FormChromaKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInputElementContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInputElementContent.Designer.cs">
+      <DependentUpon>FormInputElementContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStat.designer.cs">
+      <DependentUpon>FormStat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MImageBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MImageBox.designer.cs">
+      <DependentUpon>MImageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MChromaKeyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MChromaKeyControl.Designer.cs">
+      <DependentUpon>MChromaKeyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MComposerElementsTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MComposerElementsTree.designer.cs">
+      <DependentUpon>MComposerElementsTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPreviewComposerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MPreviewComposerControl.Designer.cs">
+      <DependentUpon>MPreviewComposerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPreviewMixerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MPreviewMixerControl.Designer.cs">
+      <DependentUpon>MPreviewMixerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MNumericSlider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MNumericSlider.Designer.cs">
+      <DependentUpon>MNumericSlider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FormAttributes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\FormAttributes.Designer.cs">
+      <DependentUpon>FormAttributes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAttributesList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MAttributesList.Designer.cs">
+      <DependentUpon>MAttributesList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MWriterStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MWriterStatus.Designer.cs">
+      <DependentUpon>MWriterStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MConfigList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MConfigList.Designer.cs">
+      <DependentUpon>MConfigList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MElementsTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MElementsTree.Designer.cs">
+      <DependentUpon>MElementsTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MScenesCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MScenesCombo.Designer.cs">
+      <DependentUpon>MScenesCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MStreamsBackground.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MStreamsBackground.Designer.cs">
+      <DependentUpon>MStreamsBackground.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAudioChannel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MAudioChannel.Designer.cs">
+      <DependentUpon>MAudioChannel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MImageStore.cs" />
+    <Compile Include="MStreamsList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MStreamsList.Designer.cs">
+      <DependentUpon>MStreamsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPersistControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MPersistControl.Designer.cs">
+      <DependentUpon>MPersistControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPlaylistBackground.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MPlaylistBackground.Designer.cs">
+      <DependentUpon>MPlaylistBackground.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPlaylistStatusSmall.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MPlaylistStatusSmall.Designer.cs">
+      <DependentUpon>MPlaylistStatusSmall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCommand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCommand.Designer.cs">
+      <DependentUpon>FormCommand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFileName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFileName.Designer.cs">
+      <DependentUpon>FormFileName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLive.Designer.cs">
+      <DependentUpon>FormLive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPlaylist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPlaylist.Designer.cs">
+      <DependentUpon>FormPlaylist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabelEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LabelEx.Designer.cs">
+      <DependentUpon>LabelEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListViewEx.Designer.cs">
+      <DependentUpon>ListViewEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAudioMeter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MAudioMeter.Designer.cs">
+      <DependentUpon>MAudioMeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MBreaksList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MBreaksList.Designer.cs">
+      <DependentUpon>MBreaksList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDeviceControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MDeviceControl.Designer.cs">
+      <DependentUpon>MDeviceControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MFileState.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MFileState.Designer.cs">
+      <DependentUpon>MFileState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MFileName.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MFileName.Designer.cs">
+      <DependentUpon>MFileName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MFormatControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MFormatControl.Designer.cs">
+      <DependentUpon>MFormatControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MHelpers.cs" />
+    <Compile Include="MLiveControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MLiveControl.Designer.cs">
+      <DependentUpon>MLiveControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPlaylistList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MPlaylistList.Designer.cs">
+      <DependentUpon>MPlaylistList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPlaylistStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MPlaylistStatus.Designer.cs">
+      <DependentUpon>MPlaylistStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPlaylistTimeline.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MPlaylistTimeline.Designer.cs">
+      <DependentUpon>MPlaylistTimeline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MFilePreciseSeek.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MFilePreciseSeek.Designer.cs">
+      <DependentUpon>MFilePreciseSeek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPreviewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MPreviewControl.Designer.cs">
+      <DependentUpon>MPreviewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MPropsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MPropsControl.Designer.cs">
+      <DependentUpon>MPropsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MFileRate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MFileRate.Designer.cs">
+      <DependentUpon>MFileRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MRenderersList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MRenderersList.Designer.cs">
+      <DependentUpon>MRenderersList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MSchedulerList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MSchedulerList.Designer.cs">
+      <DependentUpon>MSchedulerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MFileSeeking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MFileSeeking.Designer.cs">
+      <DependentUpon>MFileSeeking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MStressControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MStressControl.Designer.cs">
+      <DependentUpon>MStressControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PictureBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PictureBoxEx.Designer.cs">
+      <DependentUpon>PictureBoxEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MCollapsibleGroupBox.resx">
+      <DependentUpon>MCollapsibleGroupBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddURL.resx">
+      <DependentUpon>FormAddURL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCameraControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormCameraControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCG.resx">
+      <DependentUpon>FormCG.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCG_Schedule.resx">
+      <DependentUpon>FormCG_Schedule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCG_XML.resx">
+      <DependentUpon>FormCG_XML.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChromaKey.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormChromaKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputElementContent.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormInputElementContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStat.resx">
+      <DependentUpon>FormStat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MChromaKeyControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MChromaKeyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MComposerElementsTree.resx">
+      <DependentUpon>MComposerElementsTree.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MNumericSlider.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MNumericSlider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPreviewComposerControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MPreviewComposerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPreviewMixerControl.resx">
+      <DependentUpon>MPreviewMixerControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FormAttributes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormAttributes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAttributesList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MAttributesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MWriterStatus.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MWriterStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MConfigList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MConfigList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MElementsTree.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MElementsTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MScenesCombo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MScenesCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MStreamsBackground.resx">
+      <DependentUpon>MStreamsBackground.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAudioChannel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MAudioChannel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MStreamsList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MStreamsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPersistControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MPersistControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPlaylistBackground.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MPlaylistBackground.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPlaylistStatusSmall.resx">
+      <DependentUpon>MPlaylistStatusSmall.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCommand.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFileName.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormFileName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLive.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormLive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPlaylist.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPlaylist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabelEx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LabelEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListViewEx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListViewEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAudioMeter.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MAudioMeter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MBreaksList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MBreaksList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDeviceControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MDeviceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MFileState.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MFileState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MFileName.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MFileName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MFormatControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MFormatControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MLiveControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MLiveControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPlaylistList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MPlaylistList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPlaylistStatus.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MPlaylistStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPlaylistTimeline.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MPlaylistTimeline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MFilePreciseSeek.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MFilePreciseSeek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPreviewControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MPreviewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MPropsControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MPropsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MFileRate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MFileRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MRenderersList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MRenderersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MSchedulerList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MSchedulerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MFileSeeking.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MFileSeeking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MStressControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MStressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PictureBoxEx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PictureBoxEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VirtualDev.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vu_back1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_up.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ControlsSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>ControlsSettings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\icon_dow.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1080.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="MCHROMAKEYLib">
+      <Guid>{D3F4C631-FC55-4B9E-A300-5E86F7BA97EF}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MLCHARGENLib">
+      <Guid>{A792045E-B55C-473B-8C61-861E93A1D370}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MLPROXYLib">
+      <Guid>{E028E984-C4EE-417D-A800-5C36ADD24058}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MPLATFORMLib">
+      <Guid>{92BEC1C8-EA18-45C7-B8C1-5B2CC1B531DE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
