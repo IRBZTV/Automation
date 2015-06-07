@@ -39,20 +39,8 @@
     <ApplicationIcon>the_movies_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Interop.MLCHARGENLib">
-      <HintPath>..\MControls\obj\x86\Debug\Interop.MLCHARGENLib.dll</HintPath>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="Interop.MPLATFORMLib">
-      <HintPath>..\MControls\obj\x86\Debug\Interop.MPLATFORMLib.dll</HintPath>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </Reference>
-    <Reference Include="MControls, Version=1.0.5329.19860, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\MControls\bin\x86\Debug\MControls.dll</HintPath>
-    </Reference>
     <Reference Include="MediaInfoNET">
-      <HintPath>..\..\VideoUploader\VideoUploader\bin\Debug\MediaInfoNET.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\SOFTWARES\COMPONENTS\MediaInfoNET_Binaries\MediaInfoNET.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -126,6 +114,15 @@
     <Content Include="the_movies_icon.ico" />
   </ItemGroup>
   <ItemGroup>
+    <COMReference Include="MLCHARGENLib">
+      <Guid>{A792045E-B55C-473B-8C61-861E93A1D370}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
     <COMReference Include="MLPROXYLib">
       <Guid>{E028E984-C4EE-417D-A800-5C36ADD24058}</Guid>
       <VersionMajor>1</VersionMajor>
@@ -135,6 +132,21 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+    <COMReference Include="MPLATFORMLib">
+      <Guid>{92BEC1C8-EA18-45C7-B8C1-5B2CC1B531DE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MControls\MControlsRev.csproj">
+      <Project>{cc6be434-0877-4f65-8a13-76532b314f8a}</Project>
+      <Name>MControlsRev</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

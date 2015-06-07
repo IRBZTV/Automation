@@ -55,7 +55,6 @@ namespace Conductor
 
             response.Close();
         }
-
         private void cmbProgKind_SelectedIndexChanged(object sender, EventArgs e)
         {
             BO.Programs_Kind ProgKind = (BO.Programs_Kind)((BO.MyListItem)cmbProgKind.SelectedItem).value;
@@ -81,8 +80,6 @@ namespace Conductor
                 }
             }
             response.Close();
-        }
-
-       
+        }       
     }
 }

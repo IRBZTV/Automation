@@ -113,10 +113,10 @@
             this.Column10,
             this.Column11});
             this.dgvItems.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvItems.Location = new System.Drawing.Point(3, 17);
+            this.dgvItems.Location = new System.Drawing.Point(3, 20);
             this.dgvItems.Name = "dgvItems";
             this.dgvItems.ReadOnly = true;
-            this.dgvItems.Size = new System.Drawing.Size(990, 379);
+            this.dgvItems.Size = new System.Drawing.Size(990, 376);
             this.dgvItems.TabIndex = 0;
             // 
             // Column1
@@ -226,7 +226,7 @@
             this.lblDayTitle.ForeColor = System.Drawing.Color.Green;
             this.lblDayTitle.Location = new System.Drawing.Point(6, 15);
             this.lblDayTitle.Name = "lblDayTitle";
-            this.lblDayTitle.Size = new System.Drawing.Size(81, 38);
+            this.lblDayTitle.Size = new System.Drawing.Size(99, 47);
             this.lblDayTitle.TabIndex = 2;
             this.lblDayTitle.Text = "یکشنبه";
             // 
@@ -235,7 +235,7 @@
             this.txtDate.Font = new System.Drawing.Font("B Nazanin", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtDate.Location = new System.Drawing.Point(129, 12);
             this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(122, 46);
+            this.txtDate.Size = new System.Drawing.Size(122, 55);
             this.txtDate.TabIndex = 0;
             this.txtDate.Text = "1393/09/02";
             // 
@@ -272,7 +272,7 @@
             this.lblFileStatus.ForeColor = System.Drawing.Color.DarkRed;
             this.lblFileStatus.Location = new System.Drawing.Point(364, 155);
             this.lblFileStatus.Name = "lblFileStatus";
-            this.lblFileStatus.Size = new System.Drawing.Size(141, 26);
+            this.lblFileStatus.Size = new System.Drawing.Size(176, 32);
             this.lblFileStatus.TabIndex = 18;
             this.lblFileStatus.Text = "وضعیت فایل در سیستم";
             // 
@@ -281,7 +281,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(612, 155);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(36, 13);
+            this.label9.Size = new System.Drawing.Size(46, 17);
             this.label9.TabIndex = 17;
             this.label9.Text = "بازبین:";
             // 
@@ -292,7 +292,7 @@
             this.lblReviewer.ForeColor = System.Drawing.Color.Green;
             this.lblReviewer.Location = new System.Drawing.Point(527, 149);
             this.lblReviewer.Name = "lblReviewer";
-            this.lblReviewer.Size = new System.Drawing.Size(84, 26);
+            this.lblReviewer.Size = new System.Drawing.Size(103, 32);
             this.lblReviewer.TabIndex = 16;
             this.lblReviewer.Text = "آقای محمدی";
             // 
@@ -301,7 +301,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(446, 120);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(32, 13);
+            this.label7.Size = new System.Drawing.Size(39, 17);
             this.label7.TabIndex = 15;
             this.label7.Text = "مدت:";
             // 
@@ -310,7 +310,7 @@
             this.txtFileDuration.Font = new System.Drawing.Font("B Nazanin", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtFileDuration.Location = new System.Drawing.Point(364, 108);
             this.txtFileDuration.Name = "txtFileDuration";
-            this.txtFileDuration.Size = new System.Drawing.Size(76, 37);
+            this.txtFileDuration.Size = new System.Drawing.Size(76, 44);
             this.txtFileDuration.TabIndex = 14;
             this.txtFileDuration.Text = "00:00:00";
             // 
@@ -319,7 +319,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(612, 120);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 13);
+            this.label6.Size = new System.Drawing.Size(80, 17);
             this.label6.TabIndex = 13;
             this.label6.Text = "شماره فایل:";
             // 
@@ -328,7 +328,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(84, 77);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 13);
+            this.label5.Size = new System.Drawing.Size(52, 17);
             this.label5.TabIndex = 12;
             this.label5.Text = "شماره:";
             // 
@@ -336,9 +336,9 @@
             // 
             this.cmbSessionNumber.Font = new System.Drawing.Font("B Nazanin", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.cmbSessionNumber.FormattingEnabled = true;
-            this.cmbSessionNumber.Location = new System.Drawing.Point(130, 64);
+            this.cmbSessionNumber.Location = new System.Drawing.Point(142, 64);
             this.cmbSessionNumber.Name = "cmbSessionNumber";
-            this.cmbSessionNumber.Size = new System.Drawing.Size(476, 38);
+            this.cmbSessionNumber.Size = new System.Drawing.Size(464, 45);
             this.cmbSessionNumber.TabIndex = 11;
             // 
             // label4
@@ -346,16 +346,16 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(612, 72);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 13);
+            this.label4.Size = new System.Drawing.Size(56, 17);
             this.label4.TabIndex = 10;
             this.label4.Text = "قسمت:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(422, 29);
+            this.label3.Location = new System.Drawing.Point(402, 32);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
+            this.label3.Size = new System.Drawing.Size(46, 17);
             this.label3.TabIndex = 9;
             this.label3.Text = "برنامه:";
             // 
@@ -364,7 +364,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(612, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.Size = new System.Drawing.Size(68, 17);
             this.label1.TabIndex = 8;
             this.label1.Text = "نوع برنامه:";
             // 
@@ -383,7 +383,7 @@
             this.txtFileId.Font = new System.Drawing.Font("B Nazanin", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtFileId.Location = new System.Drawing.Point(487, 108);
             this.txtFileId.Name = "txtFileId";
-            this.txtFileId.Size = new System.Drawing.Size(119, 37);
+            this.txtFileId.Size = new System.Drawing.Size(119, 44);
             this.txtFileId.TabIndex = 6;
             this.txtFileId.Text = "6512376";
             // 
@@ -392,7 +392,7 @@
             this.txtSessionNo.Font = new System.Drawing.Font("B Nazanin", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtSessionNo.Location = new System.Drawing.Point(6, 65);
             this.txtSessionNo.Name = "txtSessionNo";
-            this.txtSessionNo.Size = new System.Drawing.Size(72, 37);
+            this.txtSessionNo.Size = new System.Drawing.Size(72, 44);
             this.txtSessionNo.TabIndex = 5;
             this.txtSessionNo.Text = "475";
             // 
@@ -402,7 +402,7 @@
             this.cmbProg.FormattingEnabled = true;
             this.cmbProg.Location = new System.Drawing.Point(6, 20);
             this.cmbProg.Name = "cmbProg";
-            this.cmbProg.Size = new System.Drawing.Size(410, 38);
+            this.cmbProg.Size = new System.Drawing.Size(390, 45);
             this.cmbProg.TabIndex = 1;
             // 
             // cmbProgKind
@@ -411,7 +411,7 @@
             this.cmbProgKind.FormattingEnabled = true;
             this.cmbProgKind.Location = new System.Drawing.Point(465, 20);
             this.cmbProgKind.Name = "cmbProgKind";
-            this.cmbProgKind.Size = new System.Drawing.Size(141, 38);
+            this.cmbProgKind.Size = new System.Drawing.Size(141, 45);
             this.cmbProgKind.TabIndex = 0;
             this.cmbProgKind.SelectedIndexChanged += new System.EventHandler(this.cmbProgKind_SelectedIndexChanged);
             // 
@@ -482,7 +482,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1020, 621);
             this.Controls.Add(this.groupBox4);
